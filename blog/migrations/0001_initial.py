@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=200, unique=True)),
                 ('slug', models.SlugField(max_length=200, unique=True)),
                 ('updated_on', models.DateTimeField(auto_now=True)),
-                ('Content', models.TextField()),
+                ('content', models.TextField()),
                 ('featured_image', cloudinary.models.CloudinaryField(default='placeholder', max_length=255, verbose_name='image')),
                 ('excerpt', models.TextField()),
                 ('created_on', models.DateTimeField(auto_now_add=True)),
